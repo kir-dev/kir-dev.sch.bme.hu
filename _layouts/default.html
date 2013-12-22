@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/zenburn.css">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/atom.xml">
+    </head>
+    <body>
+        <header id="page-header">
+            <a href="/">
+                <img src="/img/kirdev.png" alt="logo"/>
+                <h1>
+                    Kir-Dev
+                </h1>
+            </a>
+        </header>
+        <nav>
+            <a href="/about">Rólunk</a>
+            &middot;
+            <a href="/contact">Kapcsolat</a>
+            &middot;
+            <a href="/atom.xml">Feed</a>
+        </nav>
+        <div id="main">
+            {{content}}
+        </div>
+        <footer>
+            &copy; 2013 Kir-Dev
+            | email: kir-dev [kukac] sch.bme.hu
+            | <a href="https://twitter.com/KirDev">twitter</a>
+            | <a href="https://www.facebook.com/kirdevteam">facebook</a>
+            | #kir-dev on freenode
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+---
+layout: default
+title: "Kir-Dev blog"
+---
+
+{% for post in paginator.posts %}
+    <div class="post">
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <p class="meta">
+            <span class="date">{{ post.date | date: "%Y.%m.%-d." }}</span>
+            |
+            <span class="author">írta: {{ post.author }}</span>
+        </p>
+        <div class="content">
+            {% if post.layout == 'link' %}
+                {% include link.html %}
+            {% endif %}
+            {{ post.content }}
+        </div>
+    </div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="left">&laquo; Előző</a>
+    {% else %}
+        <span class="left">&laquo; Előző</span>
+    {% endif %}
+
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="right">Következő &raquo;</a>
+    {% else %}
+        <span class="right">Következő &raquo;</span>
+    {% endif %}
+    <div class="clear"></div>
+</div>
+{% endif %}

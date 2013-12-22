@@ -1,0 +1,156 @@
+body {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #333;
+  background-color: #F7F7F7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'PT mono', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2D80EB;
+}
+
+a:hover {
+  color: #122E53;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #122E53;
+}
+
+footer {
+  font-size: 0.6em;
+  color: #888;
+  margin: 20px 0;
+}
+
+nav {
+  margin-top: 10px;
+  font-family: "PT mono", sans-serif;
+}
+
+nav a:visited {
+  color: #2D80EB;
+}
+
+header#page-header {
+  position: relative;
+  padding-top: 60px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+header#page-header img {
+  max-width: 34px;
+  max-height: 34px;
+  position: absolute;
+  left: -55px;
+  bottom: 9px;
+}
+
+header#page-header a {
+  text-decoration: none;
+  color: #ef3900;
+}
+header#page-header a:hover {
+  color: #862304;
+}
+
+header#page-header h1 {
+  margin: 0;
+  font-family: 'PT mono', sans-serif;
+  font-size: 2.1em;
+  letter-spacing: 2px;
+}
+
+.pagination a:visited {
+  color: #2D80EB;
+}
+
+.pagination .left {
+  float: left;
+}
+
+.pagination .right {
+  float: right;
+}
+
+.pagination .clear {
+  clear: both;
+}
+
+.post {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.post + .post {
+  margin-top: 100px;
+}
+
+.post h1 {
+  margin: 0;
+}
+
+.post h2 {
+  font-size: 1.2em;
+}
+
+.post h1.link-title a:after {
+  padding-left: 5px;
+  content: '\2192';
+}
+
+.post h1 a:visited {
+  color: #2D80EB;
+}
+
+.post h1 a:hover {
+  color: #122E53;
+  text-decoration: none;
+}
+
+.post .meta {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.post blockquote {
+  border-left: 6px solid #eee;
+  font-style: italic;
+  margin: 0;
+  padding-left: 30px;
+  color: #666;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 1px 2px;
+  border-radius: 3px;
+}
+
+.post pre {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #eef;
+  padding: 3px 7px;
+  font-size: 0.9em;
+  line-height: 23px;
+}
+
+.post pre code {
+  border: none;
+}
+
+.post .content a.extern-link:after {
+  content: '\2192';
+}

@@ -1,0 +1,13 @@
+name: "Kir-Dev blog"
+url: http://kir-dev.sch.bme.hu
+markdown: redcarpet
+pygments: true
+permalink: pretty
+paginate: 10
+timezone: Europe/Budapest
+
+redcarpet:
+    extensions:
+        - autolink
+        - strikethrough
+        - no_intra_emphasis
