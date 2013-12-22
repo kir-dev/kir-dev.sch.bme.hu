@@ -1,5 +1,5 @@
 body {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   font-size: 18px;
   color: #333;
@@ -54,6 +54,7 @@ header#page-header img {
   position: absolute;
   left: -55px;
   bottom: 9px;
+  display: none;
 }
 
 header#page-header a {
@@ -153,4 +154,27 @@ header#page-header h1 {
 
 .post .content a.extern-link:after {
   content: '\2192';
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  body {
+    margin: 0 20px;
+    font-size: 16px;
+  }
+
+  header#page-header {
+    padding-top: 10px;
+  }
+
+  .post + .post {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 990px) {
+  header#page-header img {
+    display: block;
+  }
 }
