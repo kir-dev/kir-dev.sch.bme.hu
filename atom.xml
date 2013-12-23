@@ -26,7 +26,6 @@ layout: nil
             {% include link.html %}
             {{ post.content | xml_escape }}
         </content>
-        <category term="{{ post.category }}" />
     </entry>
     {% endfor %}
 
