@@ -12,6 +12,10 @@ h1 {
   font-family: 'PT mono', sans-serif;
 }
 
+p {
+  text-align: justify;
+}
+
 a {
   text-decoration: none;
   color: #2D80EB;
