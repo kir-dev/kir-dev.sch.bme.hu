@@ -11,7 +11,7 @@ Ebben a fél órás előadásban vázolt irányok és ötletek bármilyen objekt
 orientált nyelven és környezetben használhatóak.
 
 Az benne az ijesztő, hogy félelmetesen egyszerű dolgokról van szó. Visszanyúl az
-OO legeslegelső építőkockájáig és új fénybe helyezi. Akár magadtól is rájöhettél
+OO egyik leglegelső építőkockájáig és új fénybe helyezi. Akár magadtól is rájöhettél
 volna, de az adatvezérelt tervezés és fejlesztés teljesen kitölti a látóteredet.
 
 Érdemes elgondolkodni a előadásban elhangzottakon és megnézni, hogy hogyan
