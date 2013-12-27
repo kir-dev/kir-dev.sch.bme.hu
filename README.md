@@ -6,20 +6,26 @@ A [kir-dev.sch.bme.hu](http://kir-dev.sch.bme.hu) tartalma.
 Új bejegyzés létrehozása
 ------------------------
 
-A `_posts` mappába hozzunk létre egy új fájlt. A fájlnév formátuma a következő:
+1. Válts át a `draft` branch-re.
+2. A `_posts` mappába hozz létre egy új fájlt. A fájlnév formátuma a következő:
 
-    2013-12-22-a-bejegyzes-cime.md
+        2013-12-22-a-bejegyzes-cime.md
 
-A megfelelő részek értelmszerűen módosítandóak.
+    A megfelelő részek értelemszerűen módosítandóak.
+
+3. Pushold fel a githubra és kérj meg valakit, hogy nézze át a bejegyzést.
+4. Javítsd a bejegyzést, ha szükséges.
+5. Ismételd a 3-as és 4-es pontot, amíg szükséges.
+6. Mergeld a bejegyzésed a masterbe: `git checkout master && git merge draft --no-ff`
 
 Új bejegyzés sablonja
 ---------------------
 
-Két féle bejegyzést támogat a jelenlegi sablon.
+Kétféle bejegyzést támogat a jelenlegi sablon.
 
 1. egyszerű szöveges bejegyzés
-2. link bejegyzés: főleg megosztáshoz. A fromátuma a következő:
-link + idézet a linkelt odldalról + egy-két saját gondolat
+2. link bejegyzés: főleg megosztáshoz. A formátuma a következő:
+link + idézet a linkelt oldalról + egy-két saját gondolat
 
 A teljes paraméter lista [itt megtalálható](http://jekyllrb.com/docs/frontmatter/).
 
