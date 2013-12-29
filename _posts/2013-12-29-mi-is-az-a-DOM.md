@@ -10,7 +10,7 @@ A következő linken egy kis összefoglalást találhattok erről a
 különös de mégis hasznos modellről. Akinek pedig mindez nem elég annak
 az oldal alján további olvasnivalók is megbújnak.
 
-[What is the DOM?](http://css-tricks.com/dom/?utm_source=dlvr.it&utm_medium=twitter)
+[What is the DOM?](http://css-tricks.com/dom/)
 
 <p style="text-align: center; font-weight: bold;">
     További kellemes ünnepeket!
