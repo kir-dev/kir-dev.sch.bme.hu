@@ -86,9 +86,9 @@ A következő segéd CSS osztályokat foglalja magába a sablon:
 A projekt kommentezett így sok helyen ezeket a részeket megjelölték a készítők. A `main.css` fájlba
 egy kommentel van jelölve, hogy a saját stílusaidat hol definiáld:
 
-    /* ==========================================================================
+    /* ======================================================
        Author's custom styles
-       ========================================================================== */
+       ====================================================== */
 
 Ugyanígy megvan az `index.html`-ben is, hogy hova kezdd el írni az oldaladnak a kódját:
 
