@@ -6,7 +6,7 @@ date: 2014-01-03 22:00:00
 ---
 
 A HTML5 Boilerplate egy front-end template, amit arra találtak ki, hogy gyors, robusztus és
-alkalmazkodó weboldalakat tudj készíteni az új HTML5 funkcionalitásokkal. Ez egy nyílt forrású projekt, amit Paul Irish és Divya Manian készített és tökéletes arra, hogy cross-browser weboldalakat készíts, amik működnek a régi böngészőkben is. A projekt letölthető a [HTML5 Boilerplate](http://html5boilerplate.com/) weboldaláról teljes csomagként vagy egy kisebb változatban, amely nem tartalmazza a dokumentációt. Az utóbbi csak azoknak ajánlott akik már dolgoztak vele korábban. Az elkövetkező pár percben megpróbáljuk bemutatni számodra ezt a hasznos eszközt!
+alkalmazkodó weboldalakat tudj készíteni az új HTML5 funkcionalitásokkal. Ez egy nyílt forrású projekt, amit Paul Irish és Divya Manian készített és tökéletes arra, hogy valódi cross-browser weboldalakat hozz létre, amik működnek a régebbi verziókkal is. A projekt letölthető a [HTML5 Boilerplate](http://html5boilerplate.com/) weboldaláról teljes csomagként vagy egy kisebb változatban, amely nem tartalmazza a dokumentációt. Az utóbbi csak azoknak ajánlott akik már dolgoztak vele korábban. A cikkben igyekszünk bemutatni a projekt képességeit.
 
 ## Mi található a csomagban?
 
@@ -20,9 +20,9 @@ dokumentációkat is az egyes részekhez.
 * crossdomain.xml
 * Egyéb (gitignore és hasonló fájlok)
 
-A [Modernizr](http://modernizr.com/) (erről részletesebben egy másik bejegyzésben írunk majd) is megtalálható a csomagban ami arra szolgál, hogy detektálni tudd a böngészők által támogatott HTML5 és CSS3 funkciókat. Segít abban is, hogy az oldal dizájnja is megfelelően működjön ezek alapján.
+A [Modernizr](http://modernizr.com/) (erről részletesebben egy másik bejegyzésben írunk majd) is megtalálható a csomagban ami képes detektálni a böngészők által támogatott HTML5 és CSS3 funkciókat. Segít abban is, hogy az oldal dizájnja alkalmazkodjon a böngésző képességeihez.
 
-A [Normalize.css](http://necolas.github.io/normalize.css/) is megtalálható a projektben azért, hogy a böngészők sokkal konzisztensebben rendereljék ki az oldalad. Csak azokat a stílusokat célozza meg amelyeket szükséges és a többit érintetlenül hagyja. Érdemes átnézni a tartalmát mivel ha bármilyen problémánk akad fejlesztés közben akkor jusson eszünkbe, hogy a saját stílusainkon kívűl ez is beleszól abba, hogyan jelenlenek meg az elemek.
+A [Normalize.css](http://necolas.github.io/normalize.css/) betöltésével a böngészők sokkal konzisztensebben renderelik az oldalt. Csak azokat a stílusokat célozza meg amelyeket szükséges és a többit érintetlenül hagyja. Érdemes átnézni a tartalmát mivel ha bármilyen problémánk akad fejlesztés közben akkor jusson eszünkbe, hogy a saját stílusainkon kívűl ez is beleszól abba, hogyan jelenlenek meg az elemek.
 
 ## Hogyan kezdd el használni?
 
@@ -49,15 +49,15 @@ feltöltöd tartalommal, stílust és funkcionalitásokat hozol létre majd pedi
     ├── crossdomain.xml
     ├── favicon.ico
 
-A <strong>css</strong> könyvtárban fogjuk tárolni az összes `*.css` fájlját az oldalnak. Láthatjuk azonban, hogy már eleve tartalmaz néhány fájlt ezek a `normalize.css` és a `main.css`. Magukban foglalják azokat a dolgokat amelyek a HTML5 Boilerplateben alapértelmezett stílusok, általános segéd osztályok, media query placeholderek és print stílusok.
+A <strong>css</strong> könyvtárban fogjuk tárolni az oldal összes `*.css` állományát. A `normalize.css` és `main.css` tartalmazzák a HTML5 Boilerplateben alapértelmezett stílusokat, általános segéd osztályokat, media query placeholdereket és print stílusokat.
 
 A <strong>doc</strong> könyvtárban találhatod a projekthez tartozó dokumentációkat illetve ajánlásokat, érdemes egyszer átolvasnod ezeket, hogy jobban kiigazodj a struktúrában illetve könnyebben tudd használni a fejlesztés során.
 
-Az <strong>img</strong> könyvtárba helyezd az összes képet amelyet a weboldaladon meg akarsz majd jeleníteni. A későbbiekben könnyedén tudsz majd hivatkozni az ebben a könyvtárban található képekre.
+Az <strong>img</strong> könyvtárba helyezd az összes képet amelyet a weboldaladon meg akarsz majd jeleníteni. A későbbiekben könnyedén tudsz majd hivatkozni a mappában található képekre.
 
 A <strong>js</strong> mappában tárold az oldalon futó scripteket. A gyökerébe a saját scriptjeidet helyezd el míg a vendor könyvtárba azokat tedd amelyek egyéb forrásból származnak. Így könnyebb rendszerezni a fájlokat és nem lesz egy nagy ömlesztett átláthatatlan rengeteg.
 
-A `*.html` fájlokat pedig az egész struktúrának a gyökerében tárold, ezek lesznek azok az oldalak amelyek majd a tartalom megjelenítésére fogsz használni. Ugyanitt található a `favicon.ico` (az a kis icon amit a böngésződ megjelenít pl.: a tabokon az oldal neve mellett) a `robots.txt` illetve a `humans.txt` is, amelyekből az előbbi a keresőrobotok számára szolgáltat információkat az oldalról, a második pedig információt tartalmaz azokról az emberekről akik a weboldal létrehozásában segítettek. 
+A `*.html` fájlokat az egész struktúrának a gyökerében tárold, ezek lesznek azok az oldalak amelyeket majd a tartalom megjelenítésére fogsz használni. Ugyanitt található a `favicon.ico` (az a kis icon amit a böngésződ megjelenít pl.: a tabokon az oldal neve mellett) a `robots.txt` illetve a `humans.txt` is, amelyekből az előbbi a keresőrobotok számára szolgáltat információkat az oldalról, a második pedig információt tartalmaz azokról az emberekről akik a weboldal létrehozásában segítettek. 
 
 A számodra ismeretlen vagy nem használatos kódrészleteket nyugodtan kommentezd ki vagy töröld ha a továbbiakban már nem lesz szükéged rá. Amennyiben szükségesnek érzed nyugodtan módosíthatod ezeket a fájlokat (pl.: az eddig megszokott módszereiddel teljesen ellentétesen használ dolgokat) hiszen ez az egész inkább tekinthető egy ajánlásnak mint kőbe vésett betartandó szabályoknak amiken nem lehet módosítani.
 
@@ -99,6 +99,6 @@ Mielőtt nekilátsz egy új projektnek mindenképp érdemes teljesen átnézned 
 
 ## Media query
 
-A HTML5 Boilerplate-ben megtalálhatóak azok a placeholderek `main.css` amelyek ahhoz kellenek, hogy különböző méretű képernyőket támogassunk (Reszponzív Web Design). A dokumentáció azt mondja, hogy érdemes úgy csinálni, hogy az oldalad tartalmához igazodjanak ezek a media query-k és ne a képernyő méretének tükrében hozzuk őket létre. A "mobile first" megközelítés nagyon fontos viszont nem mindenki akarja támogatni a különböző eszközöket. Ilyenkor csak egyszerűen vedd ki a placeholdert a CSS-ből (`main.css`).
+A `main.css`-ben megtalálhatóak azok a placeholderek  amelyek ahhoz kellenek, hogy különböző méretű képernyőket támogassunk (Reszponzív Web Design). A dokumentáció azt ajánlja, hogy az oldalad tartalmához igazodjanak ezek a media query-k és ne a képernyő méretének tükrében hozzuk őket létre. A "mobile first" megközelítés nagyon fontos viszont nem mindenki szeretné támogatni a különböző eszközöket. Ilyenkor csak egyszerűen vedd ki a placeholdert a CSS-ből.
 
 A HTML5 Boilerplate egy remek template arra, hogy bármilyen új projektet elkezdj. Rengeteg böngésző létezik amelyekhez támogatást nyújt és egy vázat ahhoz, hogy weboldalakat hozz létre mobilra, tabletre és desktopra.
