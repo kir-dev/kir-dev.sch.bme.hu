@@ -65,7 +65,7 @@ Modernizr.load({
 });
 ~~~
 
-Ebben a példában különböző scripteket töltünk be annak függvényében, hogy a böngésző támogatja-e a `test`-ben található funkciót. Ezzel azt érheted el, hogy a felhasználók számára nem működő felesleges kódokat nem kell betöltened, ezáltal növeli a teljesítményét az oldalnak. Szerencsére ez semmit nem lassít a betöltésen és néha még gyorsíthat is rajta mert a betöltés aszinkron módon történik párhuzamosan. Itt található egy érdekes dolog mégpedig a `-polyfill` suffix. Ezek általában olyan scriptek amik különböző funkcionalitásokat állítanak helyre vagy nyújtanak a régebbi böngészőkben (HTML5 fallbackkek). Akiket érdekelnek ezek a scriptek a Modernizr [GitHub repojában](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills) megtalálhatóak.
+Ebben a példában különböző scripteket töltünk be annak függvényében, hogy a böngésző támogatja-e a `test`-ben található funkciót. Ezzel azt érheted el, hogy a felhasználók számára nem működő felesleges kódokat nem kell betöltened, ezáltal növeli a teljesítményét az oldalnak. Szerencsére ez semmit nem lassít a betöltésen és néha még gyorsíthat is rajta, mert a betöltés aszinkron módon történik párhuzamosan. Itt található egy érdekes dolog mégpedig a `-polyfill` suffix. Ezek általában olyan scriptek, amik különböző funkcionalitásokat állítanak helyre vagy nyújtanak a régebbi böngészőkben (HTML5 fallbackkek). Akiket érdekelnek ezek a scriptek a Modernizr [GitHub repojában](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills) megtalálhatóak.
 
 ## HTML5
 
