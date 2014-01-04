@@ -5,7 +5,7 @@ author: kresshy
 date: 2014-01-05 12:00:00
 ---
 
-Pár napja olvashattatok a [HTML5 Boilerplate](http://kir-dev.sch.bme.hu/2014/01/03/a-html5-boilerplate/) cikkükben a [Modernizr](http://modernizr.com/) JavaScript library-ról. Megígértük, hogy írni fogunk róla és most meg is tettük. A Modernizr-t (nem nincs benne typo) arra használják, hogy detektálják a böngésződ képességeit HTML5 és CSS3 szinten. Nagyon jó dolog használni a böngészők új funkcionalitásait mindaddig amíg nem kell támogatni a régebbi verziókat. Ez a library segít neked ebben ugyanis az oldal betöltésekor gyorsan detektálja mire képes a böngésződ és a támogatott funkciókról információkat szolgáltat számodra amit felhasználhatsz a saját scriptjeidben.
+Pár napja olvashattatok a [HTML5 Boilerplate](http://kir-dev.sch.bme.hu/2014/01/03/a-html5-boilerplate/) cikkükben a [Modernizr](http://modernizr.com/) JavaScript library-ról. Megígértük, hogy írni fogunk róla, és most meg is tesszük. A Modernizr-t (nem nincs benne typo) arra használják, hogy ellenőrizd a böngésződ képességeit HTML5 és CSS3 szinten. Nagyon jó dolog használni a böngészők új funkcionalitásait mindaddig, amíg nem kell támogatni a régebbi verziókat. Ez a library segít neked ebben ugyanis az oldal betöltésekor gyorsan detektálja mire képes a felhasználó böngészője és a támogatott funkciókról információkat szolgáltat számodra, amit felhasználhatsz a saját scriptjeidben.
 
 ## Hogyan használd?
 
@@ -21,7 +21,7 @@ A következő lépésben add hozzá a `no-js` class-t a `<html>` taghez.
 <html class="no-js">
 ~~~
 
-Joggal kérdezhetitek, hogy miért adjuk hozzá ezt a class? Azért mert ez lesz az alapértelmezett állapota az oldalnak. Ha a Javascript (js) nincs engedélyeve a Modernizr egyáltalán nem fog működni (és más talán más funkciói sem az oldaladnak) ezért jó, hogy ha van egy fallback erre az esetre. Ha a JavaScript engedélyezve van akkor az oldal betöltése után ez a class le lesz cserélve dinamikusan a támogatott funkciókra. Vizsgáld meg az oldal forrását valahogy így kell kinézzen:
+Joggal kérdezhetitek, hogy miért adjuk hozzá ezt a class. Ez lesz az alapértelmezett állapota az oldalnak. Ha a Javascript (js) nincs engedélyeve a Modernizr egyáltalán nem fog működni (sőt talán más funkciói sem az oldaladnak) ezért jó, hogy ha van egy fallback erre az esetre. Ha a JavaScript engedélyezve van, akkor az oldal betöltése után ez a class dinamikusan lecserélődik a támogatott funkciókra. Vizsgáld meg az oldal forrását valahogy így kell kinézzen:
 
 ~~~html
 <html class="js canvas canvastext geolocation rgba hsla no-multiplebgs borderimage borderradius boxshadow opacity no-cssanimations csscolumns no-cssgradients no-cssreflections csstransforms no-csstransforms3d no-csstransitions  video audio cufon-active fontface cufon-ready">
@@ -29,7 +29,7 @@ Joggal kérdezhetitek, hogy miért adjuk hozzá ezt a class? Azért mert ez lesz
 
 ### Mit jelent ez a sok kifejezés?
 
-Azok amelyek előtt nem található meg a `no` prefix lesznek a támogatott funkciók, amik előtt pedig megtalálható azok a böngésző által nem támogatott funkciók. A Modernizr által visszaadott információk alapján el tudjuk dönteni, hogy pl. a css színátmenetek támogatottak vagy sem: `no-cssfradients` - tehát jelen esetben nem támogatott ez a funkció. Itt egy példa a hivatalos dokumentációból egy olyan böngészőre amely támogatja vagy nem támogatja a hangfájlok lejátszását:
+Aamelyek előtt nem található meg a `no` prefix, azok lesznek a támogatott funkciók. A Modernizr által visszaadott információk alapján el tudjuk dönteni, hogy például a css színátmenetek támogatottak vagy sem: `no-cssgradients` - tehát jelen esetben nem támogatott ez a lehetőség. Itt egy példa a hivatalos dokumentációból egy olyan böngészőre amely vagy támogatja, vagy nem támogatja a hangfájlok lejátszását:
 
 ~~~css
 /* In your CSS: */
@@ -53,24 +53,39 @@ Azok amelyek előtt nem található meg a `no` prefix lesznek a támogatott funk
 </div>
 ~~~
 
+### Modernizr.load()
+
+A `Modernizr.load` használható arra, hogy JavaScript fájlokat töltsünk be. Nézzünk meg egy példát erre is:
+
+~~~js
+Modernizr.load({
+    test: Modernizr.geolocation,
+    yep : 'geo.js',
+    nope: 'geo-polyfill.js'
+});
+~~~
+
+Ebben a példában különböző scripteket töltünk be annak függvényében, hogy a böngésző támogatja-e a `test`-ben található funkciót. Ezzel azt érheted el, hogy a felhasználók számára nem működő felesleges kódokat nem kell betöltened, ezáltal növeli a teljesítményét az oldalnak. Szerencsére ez semmit nem lassít a betöltésen és néha még gyorsíthat is rajta mert a betöltés aszinkron módon történik párhuzamosan. Itt található egy érdekes dolog mégpedig a `-polyfill` suffix. Ezek általában olyan scriptek amik különböző funkcionalitásokat állítanak helyre vagy nyújtanak a régebbi böngészőkben (HTML5 fallbackkek). Akiket érdekelnek ezek a scriptek a Modernizr [GitHub repojában](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills) megtalálhatóak.
+
 ## HTML5
 
-A Modernizr lehetővé teszi számodra, hogy az új HTML5 elemeket is használd: header, hgroup, footer, video stb. és stílusokat adj nekik. Ez nem azt jelenti, hogy hirtelen minden html5 specifikus elem elkezd működni az IE-ben, de tudsz hozzájuk stílusokat rendelni, az IE megérti ezeket, és nem fogja eldobni őket.
+A Modernizr lehetővé teszi számodra, hogy az új HTML5 elemeket is használd: header, hgroup, footer, video stb. és stílusokat adj nekik. Ez nem azt jelenti, hogy hirtelen minden html5 specifikus elem elkezd működni az IE-ben, de tudsz hozzájuk stílusokat rendelni, az IE megérti ezeket, és nem fogja eldobni őket. A betöltődés közben egy kicsi JavaScript kódot futtat a háttérben, hogy beállítsa ezeket a HTML5 elemeket.
 
 ## JavaScript
 
-JavaScript-ből is detektálhatod a különböző funkciókat elég egy egyszeri feltételt csinálnod és máris láthatod, hogy támogatott vagy nem az adott funkció:
+JavaScriptből is ellenőrizheted a különböző funkciókat. Elég egy egyszeri feltételt írnod és máris láthatod, hogy támogatott-e vagy nem az adott funkció:
 
-~~~html
+~~~js
 if (Modernizr.audio) {
-     /* properties for browsers that
-     support audio */
+    /* properties for browsers that
+    support audio */
 }else{
-     /* properties for browsers that
-     does not support audio */
+    /* properties for browsers that
+    does not support audio */
 }
 ~~~
 
-A hivatalos dokumentáció megtalálhato [itt](http://www.tutorialspoint.com/html5/html5_modernizr.htm) ebben leírják az összes detektálható tulajdonságot amit CSS-ből tudtok használni vagy JavaScriptből tudtok ellenőrizni.
+A [hivatalos dokumentációban](http://modernizr.com/docs/) leírják az összes ellenőrizhető tulajdonságot amit CSS-ből vagy JavaScriptből tudtok haszálni.
+
 
 
