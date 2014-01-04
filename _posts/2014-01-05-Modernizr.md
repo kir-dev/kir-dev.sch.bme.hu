@@ -23,8 +23,11 @@ A következő lépésben add hozzá a `no-js` class-t a `<html>` taghez.
 
 Joggal kérdezhetitek, hogy miért adjuk hozzá ezt a class. Ez lesz az alapértelmezett állapota az oldalnak. Ha a Javascript (js) nincs engedélyeve a Modernizr egyáltalán nem fog működni (sőt talán más funkciói sem az oldaladnak) ezért jó, hogy ha van egy fallback erre az esetre. Ha a JavaScript engedélyezve van, akkor az oldal betöltése után ez a class dinamikusan lecserélődik a támogatott funkciókra. Vizsgáld meg az oldal forrását valahogy így kell kinézzen:
 
-~~~html
-<html class="js canvas canvastext geolocation rgba hsla no-multiplebgs borderimage borderradius boxshadow opacity no-cssanimations csscolumns no-cssgradients no-cssreflections csstransforms no-csstransforms3d no-csstransitions  video audio cufon-active fontface cufon-ready">
+~~~html 
+<html class="js canvas canvastext geolocation rgba hsla no-multiplebgs
+borderimage borderradius boxshadow opacity no-cssanimations csscolumns 
+no-cssgradients no-cssreflections csstransforms no-csstransforms3d 
+no-csstransitions  video audio cufon-active fontface cufon-ready"> 
 ~~~
 
 ### Mit jelent ez a sok kifejezés?
