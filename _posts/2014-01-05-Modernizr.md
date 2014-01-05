@@ -2,7 +2,7 @@
 layout: post
 title: "Modernizr"
 author: kresshy
-date: 2014-01-05 12:00:00
+date: 2014-01-05 01:00:00
 ---
 
 Pár napja olvashattatok a [HTML5 Boilerplate](http://kir-dev.sch.bme.hu/2014/01/03/a-html5-boilerplate/) cikkükben a [Modernizr](http://modernizr.com/) JavaScript library-ról. Megígértük, hogy írni fogunk róla, és most meg is tesszük. A Modernizr-t (nem nincs benne typo) arra használják, hogy ellenőrizd a böngésződ képességeit HTML5 és CSS3 szinten. Nagyon jó dolog használni a böngészők új funkcionalitásait mindaddig, amíg nem kell támogatni a régebbi verziókat. Ez a library segít neked ebben ugyanis az oldal betöltésekor gyorsan detektálja mire képes a felhasználó böngészője és a támogatott funkciókról információkat szolgáltat számodra, amit felhasználhatsz a saját scriptjeidben.
@@ -32,7 +32,7 @@ no-csstransitions  video audio cufon-active fontface cufon-ready">
 
 ### Mit jelent ez a sok kifejezés?
 
-Aamelyek előtt nem található meg a `no` prefix, azok lesznek a támogatott funkciók. A Modernizr által visszaadott információk alapján el tudjuk dönteni, hogy például a css színátmenetek támogatottak vagy sem: `no-cssgradients` - tehát jelen esetben nem támogatott ez a lehetőség. Itt egy példa a hivatalos dokumentációból egy olyan böngészőre amely vagy támogatja, vagy nem támogatja a hangfájlok lejátszását:
+Amelyek előtt nem található meg a `no` prefix, azok lesznek a támogatott funkciók. A Modernizr által visszaadott információk alapján el tudjuk dönteni, hogy például a css színátmenetek támogatottak vagy sem: `no-cssgradients` - tehát jelen esetben nem támogatott ez a lehetőség. Itt egy példa a hivatalos dokumentációból egy olyan böngészőre amely vagy támogatja, vagy nem támogatja a hangfájlok lejátszását:
 
 ~~~css
 /* In your CSS: */
@@ -72,7 +72,7 @@ Ebben a példában különböző scripteket töltünk be annak függvényében, 
 
 ## HTML5
 
-A Modernizr lehetővé teszi számodra, hogy az új HTML5 elemeket is használd: header, hgroup, footer, video stb. és stílusokat adj nekik. Ez nem azt jelenti, hogy hirtelen minden html5 specifikus elem elkezd működni az IE-ben, de tudsz hozzájuk stílusokat rendelni, az IE megérti ezeket, és nem fogja eldobni őket. A betöltődés közben egy kicsi JavaScript kódot futtat a háttérben, hogy beállítsa ezeket a HTML5 elemeket.
+A Modernizr lehetővé teszi számodra, hogy az új HTML5 elemeket is használd: header, hgroup, footer, video stb. és stílusokat adj nekik. Ez nem azt jelenti, hogy hirtelen minden HTML5 specifikus elem elkezd működni az IE-ben, de tudsz hozzájuk stílusokat rendelni, az IE megérti ezeket, és nem fogja eldobni őket. A betöltődés közben egy kicsi JavaScript kódot futtat a háttérben, hogy beállítsa ezeket a HTML5 elemeket.
 
 ## JavaScript
 
