@@ -2,7 +2,7 @@
 layout: post
 title: "Modernizr"
 author: kresshy
-date: 2014-01-05 01:00:00
+date: 2014-01-05 04:03:00
 ---
 
 Pár napja olvashattatok a [HTML5 Boilerplate](http://kir-dev.sch.bme.hu/2014/01/03/a-html5-boilerplate/) cikkünkben a [Modernizr](http://modernizr.com/) JavaScript library-ról. A Modernizr-t (nem nincs benne typo) arra használjuk, hogy ellenőrizzük vele a felhasználó böngészőjének HTML5 és CSS3 képességeit. 
@@ -78,7 +78,7 @@ A Modernizr lehetővé teszi, hogy használd az új HTML5 elemeket (header, hgro
 
 ## JavaScript
 
-JavaScriptből is vizsgálhatod a különböző funkciókat. Elég egy egyszeri feltételt írnod és máris láthatod, hogy az adott funkció támogatott-e vagy nem:
+JavaScriptből is vizsgálhatod a különböző funkciókat. Elég egy feltételt írnod és máris láthatod, hogy az adott funkció támogatott-e:
 
 ~~~js
 if (Modernizr.audio) {
