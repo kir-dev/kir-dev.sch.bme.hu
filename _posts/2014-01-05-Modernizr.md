@@ -23,7 +23,7 @@ A következő lépésben add hozzá a `no-js` class-t a `<html>` taghez.
 <html class="no-js">
 ~~~
 
-Joggal kérdezhetitek, hogy miért adjuk hozzá ezt a class. Ez lesz az alapértelmezett állapota az oldalnak. Ha a Javascript (js) nincs engedélyeve a Modernizr egyáltalán nem fog működni (sőt talán más funkciói sem az oldaladnak) ezért jó, hogy ha van egy fallback erre az esetre. Ha a JavaScript engedélyezve van, akkor az oldal betöltése után a class dinamikusan lecserélődik a támogatott funkciókra. Vizsgáld meg az oldal forrását (dev toolbarban), valahogy így kell kinézzen:
+Joggal kérdezhetitek, hogy miért adjuk hozzá ezt a class-t. Ez lesz az alapértelmezett állapota az oldalnak. Ha a Javascript (js) nincs engedélyezve, a Modernizr egyáltalán nem fog működni (sőt talán más funkciói sem az oldaladnak) ezért jó, hogy ha van egy fallback erre az esetre. Ha a JavaScript engedélyezve van, akkor az oldal betöltése után a class dinamikusan lecserélődik a támogatott funkciókra. Vizsgáld meg az oldal forrását (dev toolbarban), valahogy így kell kinézzen:
 
 ~~~html 
 <html class="js canvas canvastext geolocation rgba hsla no-multiplebgs
