@@ -1,7 +1,7 @@
 ﻿---
-layout: post
 title: "Bongessz Pythonban!"
 author: kresshy
+layout: post
 date: 2014-01-07 23:54:00
 ---
 
