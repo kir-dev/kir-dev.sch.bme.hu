@@ -1,11 +1,11 @@
-﻿---
-title: "Bongessz Pythonban!"
+---
+title: "Böngéssz Pythonban!"
 author: kresshy
 layout: post
 date: 2014-01-07 23:54:00
 ---
 
-Ideje elvinni kicsit más irányba is a blog tartalmát, mivel az utóbbi időben jóformán csak front-end téma került elő. Mindig is foglalkoztatott az, hogy programozottan tudjam böngészni az világhálót. Ne gondoljunk rögtön a teljes internetet bejáró robotra, ezt a feladatot hagyjuk meg a Google-nek. Mi csak egy oldalra koncentrálunk erről szeretnénk lekérni, kiolvasni a tartalmát, megnézni a linkeket, letölteni róla egy-két fájlt, esetleg formokat kitölteni és elküldeni. A segítségünkre lesz a Python mint script nyelv és két modulja; a [_mechanize_](http://wwwsearch.sourceforge.net/mechanize/), és a [_BeautifulSoup_](http://www.crummy.com/software/BeautifulSoup/). Előbbivel egy böngészőt tudunk szimulálni, utóbbival pedig a HTML oldal elemeit tudjuk feldolgozni. 
+Ideje elvinni kicsit más irányba is a blog tartalmát, mivel az utóbbi időben jóformán csak front-end téma került elő. Mindig is foglalkoztatott az, hogy programozottan tudjam böngészni az világhálót. Ne gondoljunk rögtön a teljes internetet bejáró robotra, ezt a feladatot hagyjuk meg a Google-nek. Mi csak egy oldalra koncentrálunk erről szeretnénk lekérni, kiolvasni a tartalmát, megnézni a linkeket, letölteni róla egy-két fájlt, esetleg formokat kitölteni és elküldeni. A segítségünkre lesz a Python mint script nyelv és két modulja; a [_mechanize_](http://wwwsearch.sourceforge.net/mechanize/), és a [_BeautifulSoup_](http://www.crummy.com/software/BeautifulSoup/). Előbbivel egy böngészőt tudunk szimulálni, utóbbival pedig a HTML oldal elemeit tudjuk feldolgozni.
 
 ## mechanize
 
@@ -46,7 +46,7 @@ br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
 ~~~
 
-A legtöbb egyértelmű, de az utolsó érdekes. A `User-Agent` gyakorlatilag egy szoftver, ami a felhasználó nevében tevékenykedik. A böngészőkben, az e-mail kliensekben mind megtalálható. Nagyon sok esetben a User-Agent kliensként viselkedik egy hálózati protokollban a kommunikáció során - például a kliens-szerver architektúrában. 
+A legtöbb egyértelmű, de az utolsó érdekes. A `User-Agent` gyakorlatilag egy szoftver, ami a felhasználó nevében tevékenykedik. A böngészőkben, az e-mail kliensekben mind megtalálható. Nagyon sok esetben a User-Agent kliensként viselkedik egy hálózati protokollban a kommunikáció során - például a kliens-szerver architektúrában.
 
 A fentieket ismerve elkezdhetünk játszani a böngészőnkkel. Van egy `open(url)` metódusa, amivel oldalakat tudsz megnyitni majd a `response()` függvényéből kapjuk meg a választ.  Az `open()` után közvetlenül meghívva a `response().read()` függvényeket láthatjuk a letöltött oldal forrását. A `title()` függvénnyel ki tudjuk írni az oldal címét, az `info()` függvénnyel a header tartalmát tudjuk megnézni és így tovább. Az oldalon található formokat a `forms()` függvénnyel tudjuk lekérni ami egy listát szolgáltat a formok neveivel. Nézzük meg mennyire egyszerű kiválasztani egy formot!
 
