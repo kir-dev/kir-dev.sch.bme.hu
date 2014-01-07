@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "Böngéssz Pythonnal!"
+title: "Böngéssz Pythonban!"
 author: kresshy
 date: 2014-01-07 04:03:00
 ---
