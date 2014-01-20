@@ -3,6 +3,7 @@ layout: post
 author: tmichel
 date: 2014-01-20 22:45:00
 title: "PÉK (majdnem 2.6.3) release"
+category: pek
 ---
 
 A PÉK-et (<b>P</b>rofil **é**s **K**örök) a legtöbben a félév végi értékelésleadási időszakban használják, ilyenkor fokozottan próbálunk figyelni a jelentkező hibákra és felhasználói visszajelzésekre.
