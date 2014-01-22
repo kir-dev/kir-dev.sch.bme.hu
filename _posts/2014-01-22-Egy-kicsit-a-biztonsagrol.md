@@ -38,7 +38,7 @@ Az XSS lehetőséget nyújt kliens oldali szkriptek beszúrására a weboldalba,
 Amikor egy felhasználó meglátogatja a weboldalt akkor a böngészőjében ez a szkript letöltődik és végrehajtódik (gyakorlatilag itt történik meg ténylegesen a beszúrás) és ezek után már a támadó által elhelyezett szkript fog futni a felhasználó böngészőjében. Legtöbbször a `<script>` az `<img>` és az `<iframe>` elemeket támadják. Például a beviteli mezőbe ezt írják be:
 
 ~~~html
-<script> alert(“XSS”); </script>
+<script> alert("XSS"); </script>
 ~~~
 
 Ezek a szkriptek akár egy egyszerű form elküldésével is felkerülhetnek az oldalra, de komplexebb útvonalon is eljuthatnak a célhoz JSON, vagy XML Web Service-en keresztül. Kétféle megoldás is létezik. Az egyik az, hogy itt is a beviteli mezőkben található adatokat megfelelően ellenőrizzük, amelyben például figyelünk a `<script>` tagekre, JavaScript parancsokra, CSS stílusokra és egyéb veszélyes HTML elemekre. A másik pedig az, hogy az outputot kódoljuk. Ilyenkor ha az injektált kódunk a következő: `<script>alert(\"abc\")</script>` akkor a kimeneten megfelelően kell kódolni:
