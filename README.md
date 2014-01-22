@@ -44,6 +44,20 @@ date:   2013-12-22 20:00:00
 A bejegyzés tartalma markdownban.
 ~~~
 
+### Kommentek a post alatt
+
+Ehhez a `comment: true` kapcsolót tegyük be a többi fejlécben található beállítás közé
+
+~~~
+---
+layout: post
+title:  "A bejegyzés címe"
+author: tmichel
+date:   2013-12-22 20:00:00
+comment: true
+---
+~~~
+
 ### Link bejegyzés
 
 ~~~
