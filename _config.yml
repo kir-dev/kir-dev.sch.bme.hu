@@ -3,7 +3,7 @@ url: http://kir-dev.sch.bme.hu
 markdown: redcarpet
 pygments: true
 permalink: pretty
-paginate: 10
+paginate: 6
 timezone: Europe/Budapest
 date_format: "%Y.%m.%d."
 
