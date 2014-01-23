@@ -1,5 +1,4 @@
 body {
-  max-width: 700px;
   margin: 0 auto;
   font-size: 18px;
   color: #333;
@@ -9,7 +8,8 @@ body {
 
 h1 {
   font-size: 1.5em;
-  font-family: 'PT mono', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 p {
@@ -30,14 +30,33 @@ a:visited {
   color: #ACACAC;
 }
 
+.container {
+  position: relative;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
+  background: rgba(0, 0, 0, 0.8);
   font-size: 0.6em;
-  color: #888;
-  margin: 20px 0;
+  color: white;
+  height: 100px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+footer a {
+  color: #ef3900;
+}
+
+footer a:hover {
+  color: white;
 }
 
 nav {
-  margin-top: 10px;
+  float: right;
+  margin-top: 15px;
   font-family: "PT mono", sans-serif;
 }
 
@@ -45,32 +64,40 @@ nav a:visited {
   color: #2D80EB;
 }
 
-header#page-header {
+#page-header {
   position: relative;
-  padding-top: 60px;
+  padding-top: 0px;
   margin-bottom: 0;
   margin-top: 0;
+  min-height: 400px;
+  background: url('../img/header.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header#page-header img {
+#navigation {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+#navigation img {
   max-width: 34px;
   max-height: 34px;
-  position: absolute;
-  left: -55px;
-  bottom: 9px;
-  display: none;
 }
 
-header#page-header a {
+#navigation a {
   text-decoration: none;
+  color: black;
+}
+
+#navigation a:hover {
   color: #ef3900;
 }
-header#page-header a:hover {
-  color: #862304;
-}
 
-header#page-header h1 {
-  margin: 0;
+#navigation h1 {
+  display: inline;
+  margin-left: 15px;
   font-family: 'PT mono', sans-serif;
   font-size: 2.1em;
   letter-spacing: 2px;
@@ -114,8 +141,12 @@ header#page-header h1 {
   content: '\2192';
 }
 
+.post h1 a {
+  color: #ef3900;
+}
+
 .post h1 a:visited {
-  color: #2D80EB;
+  color: #ef3900;
 }
 
 .post h1 a:hover {
@@ -179,7 +210,7 @@ div.custom-post-share-buttons a:hover {
   cursor: pointer;
   font-family: "PT mono", sans-serif;
   text-decoration: none;
-  background-color:  #2D80EB; /*#a5c63b;*/
+  background-color:  #ef3900; /*#a5c63b;*/
   color: #ffffff;
   -webkit-transition-duration: .4s;
   -webkit-transition-timing-function: ease-out;
@@ -205,7 +236,7 @@ div.custom-post-share-buttons a:hover {
     font-size: 16px;
   }
 
-  header#page-header {
+  #navigation {
     padding-top: 10px;
   }
 
@@ -215,7 +246,5 @@ div.custom-post-share-buttons a:hover {
 }
 
 @media (min-width: 990px) {
-  header#page-header img {
-    display: block;
-  }
+
 }

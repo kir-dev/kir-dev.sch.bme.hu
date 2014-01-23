@@ -17,32 +17,47 @@
         <link rel="shortcut icon" href="/img/favicon.png"/>
     </head>
     <body>
+
         <header id="page-header">
-            <a href="/">
-                <img src="/img/kirdev.png" alt="logo"/>
-                <h1>
-                    Kir-Dev
-                </h1>
-            </a>
+            
+            <div id="navigation">
+                <div class="container">
+                    <a href="/">
+                        <img src="/img/kirdev.png" alt="logo"/>
+                        <h1>
+                            Kir-Dev
+                        </h1>
+                    </a>
+                    
+                    <nav>
+                        <a href="/archive">Archívum</a>
+                        |
+                        <a href="/about">Rólunk</a>
+                        |
+                        <a href="/contact">Kapcsolat</a>
+                        |
+                        <a href="/atom.xml">Feed</a>
+                
+                    </nav>
+                </div>
+            </div>
+            
         </header>
-        <nav>
-            <a href="/archive">Archívum</a>
-            &middot;
-            <a href="/about">Rólunk</a>
-            &middot;
-            <a href="/contact">Kapcsolat</a>
-            &middot;
-            <a href="/atom.xml">Feed</a>
-        </nav>
-        <div id="main">
-            {{content}}
+
+        <div class="container">
+            <div id="main">
+                {{content}}
+            </div>
         </div>
+        
         <footer>
-            &copy; 2013 Kir-Dev
-            | email: kir-dev [kukac] sch.bme.hu
-            | <a href="https://twitter.com/KirDev">twitter</a>
-            | <a href="https://www.facebook.com/kirdevteam">facebook</a>
-            | #kir-dev on freenode
+            <div class="container">
+                &copy; 2013 Kir-Dev
+                | email: kir-dev [kukac] sch.bme.hu
+                | <a href="https://twitter.com/KirDev">twitter</a>
+                | <a href="https://www.facebook.com/kirdevteam">facebook</a>
+                | #kir-dev on freenode
+            </div>
         </footer>
 
         <script type="text/javascript">
