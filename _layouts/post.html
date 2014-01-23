@@ -6,7 +6,9 @@ layout: default
     <p class="meta">
         <span class="date">{{ page.date | date: site.date_format }}</span>
         |
-        <span class="author">írta: {{ page.author }}</span>
+        <span class="author">
+            írta: <a href="https://profile.sch.bme.hu/profile/show/uid/{{page.author}}">{{ page.author }}</a>
+        </span>
     </p>
     <div class="content">
         {{ content }}
