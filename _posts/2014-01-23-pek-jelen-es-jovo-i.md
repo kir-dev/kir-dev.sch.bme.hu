@@ -32,7 +32,7 @@ hallgatóinak többsége elfelejtette, hogy egyáltalán volt ilyen. A VIR alá
 tartozott a lassan teljesen megszűnő [news](http://news.sch.bme.hu/), az azóta
 már átalakult [wiki](https://wiki.sch.bme.hu/), az eredetileg két alkalmazásként
 működő [Profil és Körök](https://korok.sch.bme.hu), valamint az SSO (Single
-sing-on) is. A megvalósult alkalmazásokon túl az [SSS-ről (Schönherz Social Services)](https://blog.sch.bme.hu/index.php/kozosseg/2009/11/25/sss-koezoessegi-site-villanykar-modra)
+sign-on) is. A megvalósult alkalmazásokon túl az [SSS-ről (Schönherz Social Services)](https://blog.sch.bme.hu/index.php/kozosseg/2009/11/25/sss-koezoessegi-site-villanykar-modra)
 is sokat beszéltünk, főleg a körön belül. Emellett egy [RSS aggregátor](http://stewie.sch.bme.hu/gitweb/?p=archive/andy/aggregator) is
 készült volna, ami a Schönherzen belüli hírek automatikus összegyűjtését
 célozta.
