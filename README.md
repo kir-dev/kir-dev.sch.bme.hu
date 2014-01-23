@@ -51,6 +51,8 @@ felhasználóneved, mert erre linkelünk a sablonból.
 * date (opcionális): a bejegyzés dátuma. Célszerű megadni, mert különben a fájl
 nevében megadott dátumot használja és az órát `00:00:00`-ra állítja.
 * comment (opcionális): `true` érték esetén komment szekciót is renderel a bejegyzés oldalára
+* category (opcionális): a bejegyzés kategóriája. A [#3](https://github.com/kir-dev/kir-dev.sch.bme.hu/issues/3)
+issue szól erről, egyelőre ad-hoc jelleggel történik.
 
 A teljes paraméter lista [itt megtalálható](http://jekyllrb.com/docs/frontmatter/).
 
