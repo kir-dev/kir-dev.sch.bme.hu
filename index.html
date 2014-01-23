@@ -12,9 +12,6 @@ title: "Kir-Dev blog"
             <span class="author">írta: {{ post.author }}</span>
         </p>
         <div class="content">
-            {% if post.layout == 'link' %}
-                {% include link.html %}
-            {% endif %}
             {{ post.excerpt }}
         </div>
 
