@@ -44,7 +44,7 @@ Több mint két év stagnálás után, 2013 nyarán vettük elő újra az alkalm
 munkálatok újfent a háttérben folytak. A felhasználók alig vettek észre valamit
 a dologból (és ez így is van rendjén). A Profil és Körök egyesítése végre
 teljesen megtörtént. Az egyszerűsítés volt a vesszőparipánk: A LDAP címtárat
-megszűntetettük, Glassfish-ről JBoss-ra váltottunk és a telepítést pár lépésre
+megszüntettük, Glassfish-ről JBoss-ra váltottunk és a telepítést pár lépésre
 redukáltuk. Az adatok visszakerültek az adatbázisba, ezzel megszűnt a két
 adattár közötti szinkronizáció is.
 
