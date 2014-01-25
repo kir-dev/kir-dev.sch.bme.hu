@@ -48,6 +48,10 @@ a:visited {
   min-height: 100%;
 }
 
+.container img {
+  width: 100%;
+}
+
 footer {
   background: rgba(0, 0, 0, 0.8);
   font-size: 0.6em;
