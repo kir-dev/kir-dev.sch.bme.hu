@@ -18,8 +18,7 @@
     </head>
     <body>
 
-        <!--<header id="page-header">-->
-            
+        <header id="{% if page.landing %}page-header{% endif %}">
             <div id="navigation">
                 <div class="container">
 
@@ -29,7 +28,7 @@
                             Kir-Dev
                         </h1>
                     </a>
-                    
+
                     <ul>
                         <li><a href="/archive">Archívum</a></li>
                         <li><a href="/about">Rólunk</a></li>
@@ -40,15 +39,13 @@
                     <div class="clearfix"></div>
                 </div>
             </div>
-            
-        <!--</header>-->
-<div id="main">
+        </header>
         <div class="container">
-            
+            <div id="main">
                 {{content}}
             </div>
         </div>
-        
+
         <footer>
             <div class="container">
                 &copy; {{ site.time | date: "%Y" }} Kir-Dev
