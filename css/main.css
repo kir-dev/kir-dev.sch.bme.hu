@@ -1,11 +1,13 @@
+* {
+  margin: 0;
+}
+
 html{
   height: 100%;
 }
 
-
 body {
-  height: 70%;
-  margin: 0 auto;
+  height: 100%;
   font-size: 18px;
   color: #333;
   background-color: #F7F7F7;
@@ -46,6 +48,15 @@ a:visited {
 
 #main {
   min-height: 100%;
+
+  /* equal to footer height*/
+  margin-bottom: -160px;
+}
+
+#main:after {
+  content: " ";
+  display: block;
+  height: 160px;
 }
 
 .container img {
