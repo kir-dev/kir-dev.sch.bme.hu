@@ -10,39 +10,50 @@
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/github.css">
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans|PT+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Audiowide&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
 
         <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/atom.xml">
 
         <link rel="shortcut icon" href="/img/favicon.png"/>
     </head>
     <body>
-        <header id="page-header">
-            <a href="/">
-                <img src="/img/kirdev.png" alt="logo"/>
-                <h1>
-                    Kir-Dev
-                </h1>
-            </a>
+
+        <header id="{% if page.landing %}page-header{% endif %}">
+            <div id="navigation">
+                <div class="container">
+
+                    <a href="/">
+                        <img src="/img/kirdev.png" alt="logo"/>
+                        <h1>
+                            Kir-Dev
+                        </h1>
+                    </a>
+
+                    <ul>
+                        <li><a href="/archive">Archívum</a></li>
+                        <li><a href="/about">Rólunk</a></li>
+                        <li><a href="/contact">Kapcsolat</a></li>
+                        <li><a href="/atom.xml">Feed</a></li>
+                    </ul>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
         </header>
-        <nav>
-            <a href="/archive">Archívum</a>
-            &middot;
-            <a href="/about">Rólunk</a>
-            &middot;
-            <a href="/contact">Kapcsolat</a>
-            &middot;
-            <a href="/atom.xml">Feed</a>
-        </nav>
-        <div id="main">
-            {{content}}
+        <div class="container">
+            <div id="main">
+                {{content}}
+            </div>
         </div>
+
         <footer>
-            &copy; 2013 Kir-Dev
-            | email: kir-dev [kukac] sch.bme.hu
-            | <a href="https://twitter.com/KirDev">twitter</a>
-            | <a href="https://www.facebook.com/kirdevteam">facebook</a>
-            | #kir-dev on freenode
+            <div class="container">
+                &copy; {{ site.time | date: "%Y" }} Kir-Dev
+                | email: kir-dev [kukac] sch.bme.hu
+                | <a href="https://twitter.com/KirDev">twitter</a>
+                | <a href="https://www.facebook.com/kirdevteam">facebook</a>
+                | #kir-dev on freenode
+            </div>
         </footer>
 
         <script type="text/javascript">
