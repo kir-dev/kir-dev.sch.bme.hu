@@ -18,7 +18,7 @@
     </head>
     <body>
 
-        <header id="{% if page.landing %}page-header{% endif %}">
+        <header class="{% if page.landing %}landing-page-header{% else %}page-header{% endif %}">
             <div id="navigation">
                 <div class="container">
 
@@ -41,7 +41,7 @@
             </div>
         </header>
 
-        
+
         <div id="main">
             <div class="container">
                 {{content}}
