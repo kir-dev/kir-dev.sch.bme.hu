@@ -18,27 +18,27 @@ Lényegében bármilyen adatátviteli formátumot használhatunk, de a legelterj
 
 ### XML
 
-(+) Rendkívül kiforrott formátum és nagyon sokféle támogató technológia érhető el hozzá. Például transzformáció (XSLT), lekérdezés (XPath, XQuery), validáció (XSD, DTD).
-(+) Szabványos és minden programozási nyelvből elérhető.
-(-) Kliens oldalon nehezebb használni.
-(-) Nehézsúlyú: kommunikációs overhead.
-(-) Nincs natív állapotátmenet reprezentáció kiterjesztés nélkül.
+* + Rendkívül kiforrott formátum és nagyon sokféle támogató technológia érhető el hozzá. Például transzformáció (XSLT), lekérdezés (XPath, XQuery), validáció (XSD, DTD).
+* + Szabványos és minden programozási nyelvből elérhető.
+* - Kliens oldalon nehezebb használni.
+* - Nehézsúlyú: kommunikációs overhead.
+* - Nincs natív állapotátmenet reprezentáció kiterjesztés nélkül.
 
 ### JSON
 
-(+) Kliens oldalon könnyű használni.
-(+) Könnyűsúlyú.
-(-) Nincs szabványos lekérdezés, validálás.
-(-) Nincs natív állapotátmenet reprezentáció kiterjesztés nélkül.
+* + Kliens oldalon könnyű használni.
+* + Könnyűsúlyú.
+* - Nincs szabványos lekérdezés, validálás.
+* - Nincs natív állapotátmenet reprezentáció kiterjesztés nélkül.
 
 ### HTML
 
-(+) Kiforrott formátum, sok támogató technológia.
-(+) Kliens oldalon használata triviális.
-(+) Javascript segítségével módosítható.
-(+) Natív állapotátmenet reprezentáció.
-(+) Jól jön, ha olvashatónak kell lennie az API-nak.
-(-) Nem mindig készíthető egyszerűen el az alkalmazás állapotának reprezentációja.
+* + Kiforrott formátum, sok támogató technológia.
+* + Kliens oldalon használata triviális.
+* + Javascript segítségével módosítható.
+* + Natív állapotátmenet reprezentáció.
+* + Jól jön, ha olvashatónak kell lennie az API-nak.
+* - Nem mindig készíthető egyszerűen el az alkalmazás állapotának reprezentációja.
 
 ## Néhány példa
 
