@@ -6,6 +6,7 @@ permalink: pretty
 paginate: 6
 timezone: Europe/Budapest
 date_format: "%Y.%m.%d."
+future: false
 
 redcarpet:
     extensions:
