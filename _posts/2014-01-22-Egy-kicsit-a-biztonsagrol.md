@@ -2,7 +2,7 @@
 layout: post
 title: "Egy kicsit a biztonságról"
 author: kresshy
-date: 2014-01-22 20:30:00
+date: 2014-01-22 20:30:00 CET
 comment: true
 ---
 

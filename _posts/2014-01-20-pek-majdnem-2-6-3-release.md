@@ -1,7 +1,7 @@
 ---
 layout: post
 author: tmichel
-date: 2014-01-20 22:45:00
+date: 2014-01-20 22:45:00 CET
 title: "PÉK (majdnem 2.6.3) release"
 category: pek
 ---

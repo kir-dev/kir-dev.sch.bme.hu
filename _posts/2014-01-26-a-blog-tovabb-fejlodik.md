@@ -2,7 +2,7 @@
 layout: post
 title: "A blog tovább fejlődik"
 author: kresshy
-date: 2014-01-26 12:47:00
+date: 2014-01-26 12:47:00 CET
 comment: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: tmichel
-date: 2014-01-29 22:45:00
+date: 2014-01-29 22:45:00 CET
 category: pek
 comment: true
 title: "PÉK jelene és jövője, IV. rész"

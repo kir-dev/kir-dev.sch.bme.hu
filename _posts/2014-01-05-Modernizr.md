@@ -2,7 +2,7 @@
 layout: post
 title: "Modernizr"
 author: kresshy
-date: 2014-01-05 04:03:00
+date: 2014-01-05 04:03:00 CET
 comment: true
 ---
 

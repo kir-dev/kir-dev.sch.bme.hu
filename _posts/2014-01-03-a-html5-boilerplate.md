@@ -2,7 +2,7 @@
 layout: post
 title: "A HTML5 Boilerplate"
 author: kresshy
-date: 2014-01-03 22:00:00
+date: 2014-01-03 22:00:00 CET
 comment: true
 ---
 

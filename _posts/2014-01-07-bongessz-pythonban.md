@@ -2,7 +2,7 @@
 title: "Böngéssz Pythonban!"
 author: kresshy
 layout: post
-date: 2014-01-07 23:54:00
+date: 2014-01-07 23:54:00 CET
 comment: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Hypermedia API"
 author: snapdragon
-date: 2014-01-28 13:20:00
+date: 2014-01-28 13:20:00 CET
 comment: true
 ---
 

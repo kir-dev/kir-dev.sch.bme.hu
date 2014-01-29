@@ -2,7 +2,7 @@
 layout: post
 title: "Megújulunk"
 author: tmichel
-date: 2013-12-23 00:04:00
+date: 2013-12-23 00:04:00 CET
 ---
 
 Már régóta esedékes, hogy a blogunkon némi ráncfelvarrást eszközöljünk. Ennek

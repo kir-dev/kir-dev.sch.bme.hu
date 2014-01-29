@@ -2,7 +2,7 @@
 layout: post
 title: "PÉK jelene és jövője, II. rész"
 author: tmichel
-date: 2014-01-25 12:20:00
+date: 2014-01-25 12:20:00 CET
 category: pek
 comment: true
 ---

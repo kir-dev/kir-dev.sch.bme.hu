@@ -2,7 +2,7 @@
 title: "Hogy is van ez az új Kir-Dev blog?"
 author: tmichel
 layout: post
-date: 2014-01-06 22:45:00
+date: 2014-01-06 22:45:00 CET
 comment: true
 ---
 

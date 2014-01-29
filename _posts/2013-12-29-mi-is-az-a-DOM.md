@@ -2,7 +2,7 @@
 layout: post
 title: "Mi is az a DOM?"
 author: kresshy
-date: 2013-12-29 20:28:00
+date: 2013-12-29 20:28:00 CET
 ---
 
 Ha vasárnap akkor újra front-end. Szeretnétek tudni, hogy mi az a DOM?
