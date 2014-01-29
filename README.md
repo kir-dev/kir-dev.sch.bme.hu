@@ -49,7 +49,8 @@ A _"front matter"_, vagyis a bejegyzéshez tartozó meta adatok a következők l
 * author (kötelező): a bejegyzés szerzője. Használd a [PÉKben](https://korok.sch.bme.hu/) is megtalálható
 felhasználóneved, mert erre linkelünk a sablonból.
 * date (opcionális): a bejegyzés dátuma. Célszerű megadni, mert különben a fájl
-nevében megadott dátumot használja és az órát `00:00:00`-ra állítja.
+nevében megadott dátumot használja és az órát `00:00:00`-ra állítja. **FONTOS** ha megadod a dátumot,
+akkor az időzónát se felejtsd el. A mi időzónánk a `CET`.
 * comment (opcionális): `true` érték esetén komment szekciót is renderel a bejegyzés oldalára
 * category (opcionális): a bejegyzés kategóriája. A [#3](https://github.com/kir-dev/kir-dev.sch.bme.hu/issues/3)
 issue szól erről, egyelőre ad-hoc jelleggel történik.
@@ -63,7 +64,7 @@ A teljes paraméter lista [itt megtalálható](http://jekyllrb.com/docs/frontmat
 layout: post
 title:  "A bejegyzés címe"
 author: tmichel
-date:   2013-12-22 20:00:00
+date:   2013-12-22 20:00:00 CET
 ---
 
 A bejegyzés tartalma markdownban.
@@ -78,7 +79,7 @@ Ehhez a `comment: true` kapcsolót tegyük be a többi fejlécben található be
 layout: post
 title:  "A bejegyzés címe"
 author: tmichel
-date:   2013-12-22 20:00:00
+date:   2013-12-22 20:00:00 CET
 comment: true
 ---
 ~~~
