@@ -75,7 +75,7 @@ footer {
   padding: 20px;
 }
 
-footer a {
+footer a, footer a:visited {
   color: #ef3900;
 }
 
