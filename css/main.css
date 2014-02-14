@@ -268,11 +268,6 @@ footer a:hover {
   border: none;
 }
 
-.post img {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .post .content a.extern-link:after {
   content: '\2192';
 }
