@@ -11,7 +11,11 @@ landing: true
             <span class="date">{{ post.date | date: site.date_format }}</span>
             |
             <span class="author">
+                {% if post.idp %}
+                írta: <a href="https://profile.sch.bme.hu/profile/show/uid/{{post.idp}}">{{ post.author }}</a>
+                {% else %}
                 írta: <a href="https://profile.sch.bme.hu/profile/show/uid/{{post.author}}">{{ post.author }}</a>
+                {% endif %}
             </span>
         </p>
         <div class="content">
