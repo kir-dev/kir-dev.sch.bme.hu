@@ -12,7 +12,7 @@ fi
 
 # creating variables
 filenamedate=`date +"%Y-%m-%d"`
-postdate=$filenamedate' '`date +"%H:%M"`':00 CET'
+postdate=$filenamedate' '`date +"%H:%M"`':00 UTC'
 title=$1
 escapedtitle=`echo $title | sed 's/\ /-/' | tr '[:upper:]' '[:lower:]'`
 author=$2
