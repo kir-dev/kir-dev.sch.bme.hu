@@ -12,9 +12,9 @@ fi
 
 # creating variables
 filenamedate=`date +"%Y-%m-%d"`
-postdate=$filenamedate' '`date +"%H:%M"`':00 UTC'
+postdate=$filenamedate' '`date +"%H:%M:%S %Z"`
 title=$1
-escapedtitle=`echo $title | sed 's/\ /-/' | tr '[:upper:]' '[:lower:]'`
+escapedtitle=`echo $title | tr '[:upper:]' '[:lower:]' | sed -e 's/á/a/g;s/é/e/g;s/í/i/g;s/ó/o/g;s/ö/o/g;s/ő/o/g;s/ú/u/g;s/ü/u/g;s/ű/u/g;s/ /-/g'`
 author=$2
 filename=$filenamedate'-'$escapedtitle'.md'
 filepath=$DIR/$filename
