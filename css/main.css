@@ -234,6 +234,10 @@ footer a:hover {
   color: #2D80EB;
 }
 
+.post .content a {
+  text-decoration: underline;
+}
+
 .post blockquote {
   border-left: 6px solid #eee;
   font-style: italic;
