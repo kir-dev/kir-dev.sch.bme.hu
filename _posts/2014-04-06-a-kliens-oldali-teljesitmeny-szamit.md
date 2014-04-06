@@ -97,7 +97,7 @@ A tapasztalatok alapján azonban nem minden böngészőben működik jól az er�
 <script type="text/javascript">
   function downloadJSAtOnload() {
     var element = document.createElement("script");
-    element.src = <JS fájl elérési útvonala>;
+    element.src = "<JS fájl elérési útvonala>";
     document.body.appendChild(element);
   }
   if (window.addEventListener)
