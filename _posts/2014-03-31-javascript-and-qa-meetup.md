@@ -8,7 +8,7 @@ comment: true
 
 Március 27-én volt meetup a House of Ideasban, amely főleg a JavaScript-ről és a tesztelésről szólt. Három előadóhoz volt szerencsénk a magyar startupok világából. Az első Kökény Tamás volt a Brickflow-tól, a második Tóth Barna volt a LogMeIn-től és az este utolsó előadója volt Pengő József (Dzsó) a házigazda Prezitől.
 
-![Tamas Kokeny](https://dl.dropboxusercontent.com/u/31443466/2014-03-27%2019.22.16.jpg)
+![Tamas Kokeny](//warp.sch.bme.hu/b42272783dc80d577b835513d131e869b44459b7/700)
 
 Kökény Tamás a TDD-ről (Test-Driven Development) beszélt. Az előadás címe a "TDD in laboratory and in production" címet kapta. Egy bevezetőt kaphattunk magáról a TDD-ről, illetve azokról az előnyökről és nehézségekről, amik az alkalmazása során előjönnek. Az elején sajnos, ahogy azt várni lehetett nagyon nagy az overheadje. Sokkal lassabban haladsz a fejlesztéssel, de ez hosszú távon megtérül. Minden héten gyorsabb leszel és jobb teszteket fogsz írni. A tanulási folyamat végére pedig eljutsz oda, hogy biztos leszel abban, hogy a kód, amit megírtál, jól fog működni. Mégpedig azért, mert megvannak a tesztjeid, amiket minden egyes alkalommal, mikor változtatsz a kódbázison, akkor futtatsz, és így az elvárt működésről megbizonyosodhatsz.
 
