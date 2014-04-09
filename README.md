@@ -22,17 +22,23 @@ A böngésződben pedig a `localhost:4000`-en tudod megnézni a blogot.
 Új bejegyzés létrehozása
 ------------------------
 
-1. Válts át a `draft` branch-re.
+1. Hozz létre egy új branchet a bejegyzésednek.
+
+        $ git checkout -b my-awesome-post-draft
+
 2. A `_posts` mappába hozz létre egy új fájlt. A fájlnév formátuma a következő:
 
         2013-12-22-a-bejegyzes-cime.md
 
     A megfelelő részek értelemszerűen módosítandóak.
 
-3. Pushold fel a githubra és kérj meg valakit, hogy nézze át a bejegyzést.
+3. Pushold fel a githubra és csinálj egy [pull requestet][1], majd szólj valakinek, hogy nézze meg.
+
+        $ git push -u origin my-awesome-post-draft
+
 4. Javítsd a bejegyzést, ha szükséges.
 5. Ismételd a 3-as és 4-es pontot, amíg szükséges.
-6. Mergeld a bejegyzésed a masterbe: `git checkout master && git merge draft --no-ff`
+6. Mergeld a pull requestet a masterbe.
 
 Alternatívaként elkezdtük használni a [draft](https://draftin.com/) nevű
 szolgáltatást. Itt is megírhatod a cikked, majd valaki átnézheti. Ezzel
@@ -95,3 +101,5 @@ You may not reuse anything therein without Kir-Dev's permission:
 * img/
 
 All other directories and files are MIT Licensed.
+
+[1]: https://github.com/kir-dev/kir-dev.sch.bme.hu/pulls
