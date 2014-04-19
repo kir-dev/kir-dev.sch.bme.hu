@@ -6,6 +6,8 @@ title: "Az express.js és az npm, Node is still a badass tech - III. rész"
 comment: true
 ---
 
+<img src="//warp.sch.bme.hu/08e5024461b554fc0a43611ffab1a8fe3c0eb5c1" alt="express-cover">
+
 Egy kisebb kihagyás után folytatjuk az előre haladást a Node.js világában. A mai témánk az npm ([Node Package Manager](http://www.npmjs.com/)) illetve az [Express.js](http://expressjs.com/) web application framework. Előbbi a csomagok menedzselésére, utóbbi pedig webalkalmazások készítésére szolgál. Az express.js egy [Sinatra](http://www.sinatrarb.com/) szerű framework, amelyet igen egyszerű használni. Ebben a cikkben az alapokról lesz szó, és megpróbálom bemutatni, hogyan tudtok elindulni egy ilyen webalkalmazás fejlesztésekor.
 
 ## Node package manager
