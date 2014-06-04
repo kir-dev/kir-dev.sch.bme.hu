@@ -26,10 +26,10 @@ Tehát röviden összefoglalva, mostantól lehetőség van a VIR-be bejelentkezn
 hogy az auth.sch-n keresztül jelentkezel be, vagy maradsz a régi jól bevált
 formnál.
 
-Én bátorítanék mindenkit, hogy próbálja ki az új bejelentkezési módszert. Ezzel
-Énagyban segíted a munkánkat. Az a jó, ha minél előbb kijönnek a bajok és
-Émindenféle bugok a rendszerből, és ősszel már egy stabil és jól használható
-Észoftvert tudnánk átadni.
+Bátorítanék mindenkit, hogy próbálja ki az új bejelentkezési módszert. Ezzel 
+nagyban segíted a munkánkat. Az a jó, ha minél előbb kijönnek a bajok és 
+mindenféle bugok a rendszerből, és ősszel már egy stabil és jól használható
+szoftvert tudnánk átadni.
 
 Előre is köszönjük a segítségedet. Még egyszer hangsúlyoznám, hogy fejlesztés
 alatt lévő szoftverről van szó, így ha nem megy valami, akkor mielőtt melegebb
