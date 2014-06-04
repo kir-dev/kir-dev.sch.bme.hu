@@ -10,6 +10,7 @@ future: false
 
 redcarpet:
     extensions:
+        - footnotes
         - autolink
         - strikethrough
         - no_intra_emphasis
