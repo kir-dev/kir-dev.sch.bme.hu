@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  site:
+    command: jekyll serve
+    container_name: kir-dev_blog
+    image: jekyll/jekyll:latest
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+    ports:
+      - 3333:4000

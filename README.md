@@ -1,30 +1,44 @@
-Kir-Dev blog
-============
+# Kir-Dev blog
 
 A [kir-dev.sch.bme.hu](http://kir-dev.sch.bme.hu) tartalma.
 
-Telepítés
+## Telepítés
+
 ---------
+
+### Bare metal
 
 Legyen telepítve ruby és jekyll a gépeden. A jekyll gemként telepíthető. Tehát
 ha már van ruby-d:
 
-    $ gem install jekyll
+    gem install jekyll
 
 Ha az előkövetlemények megvannak, akkor
 
-    $ git clone https://github.com/kir-dev/kir-dev.sch.bme.hu.git kirdev-blog
-    $ cd kirdev-blog
-    $ jekyll serve --watch
+    git clone https://github.com/kir-dev/kir-dev.sch.bme.hu.git kirdev-blog
+    cd kirdev-blog
+    jekyll serve --watch
 
 A böngésződben pedig a `localhost:4000`-en tudod megnézni a blogot.
 
-Új bejegyzés létrehozása
-------------------------
+### Docker
+
+    git clone https://github.com/kir-dev/kir-dev.sch.bme.hu.git kirdev-blog
+    cd kirdev-blog
+    docker-compose up
+
+Ekkor a `localhost:3333`-as címen lesz elérhető.
+
+Ha daemonként szeretnénk indítani a docker containert, akkor ezt a `docker-compose up` paranccsal tehetjük meg.
+Leállítani a `docker-compose stop` paranccsal tudjuk.
+
+## Új bejegyzés létrehozása
+
+---------
 
 1. Hozz létre egy új branchet a bejegyzésednek.
 
-        $ git checkout -b my-awesome-post-draft
+        git checkout -b my-awesome-post-draft
 
 2. A `_posts` mappába hozz létre egy új fájlt. A fájlnév formátuma a következő:
 
@@ -34,7 +48,7 @@ A böngésződben pedig a `localhost:4000`-en tudod megnézni a blogot.
 
 3. Pushold fel a githubra és csinálj egy [pull requestet][1], majd szólj valakinek, hogy nézze meg.
 
-        $ git push -u origin my-awesome-post-draft
+        git push -u origin my-awesome-post-draft
 
 4. Javítsd a bejegyzést, ha szükséges.
 5. Ismételd a 3-as és 4-es pontot, amíg szükséges.
@@ -45,8 +59,9 @@ szolgáltatást. Itt is megírhatod a cikked, majd valaki átnézheti. Ezzel
 átugorhatjuk majdnem a teljes előző folyamatot. Ha kész a cikk, rögtön mehet
 `master`-be.
 
-Új bejegyzés sablonja
----------------------
+## Új bejegyzés sablonja
+
+---------
 
 A _"front matter"_, vagyis a bejegyzéshez tartozó meta adatok a következők lehetnek:
 
@@ -65,33 +80,30 @@ A teljes paraméter lista [itt megtalálható](http://jekyllrb.com/docs/frontmat
 
 ### Bejegyzés sablon
 
-~~~
----
-layout: post
-title:  "A bejegyzés címe"
-author: tmichel
-date:   2013-12-22 20:00:00 CET
----
+    ---
+    layout: post
+    title:  "A bejegyzés címe"
+    author: tmichel
+    date:   2013-12-22 20:00:00 CET
+    ---
 
-A bejegyzés tartalma markdownban.
-~~~
+    A bejegyzés tartalma markdownban.
 
 ### Kommentek a bejegyzés alatt
 
 Ehhez a `comment: true` kapcsolót tegyük be a többi fejlécben található beállítás közé
 
-~~~
----
-layout: post
-title:  "A bejegyzés címe"
-author: tmichel
-date:   2013-12-22 20:00:00 CET
-comment: true
----
-~~~
+    ---
+    layout: post
+    title:  "A bejegyzés címe"
+    author: tmichel
+    date:   2013-12-22 20:00:00 CET
+    comment: true
+    ---
 
-License
--------
+## License
+
+---------
 
 The following directories and their contents are Copyright Kir-Dev.
 You may not reuse anything therein without Kir-Dev's permission:
