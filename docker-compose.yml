@@ -2,6 +2,8 @@ version: '3.2'
 
 services:
   site:
+    environment:
+      - JEKYLL_ENV=production
     command: jekyll serve
     container_name: kir-dev_blog
     image: jekyll/jekyll:latest
